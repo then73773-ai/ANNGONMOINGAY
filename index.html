@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AnNgonMoiNgay.vn — Ăn ngon mỗi ngày</title>
+  <meta name="description" content="Công thức, review quán ăn và mẹo ẩm thực hàng ngày — AnNgonMoiNgay.vn">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <div class="logo">ĂN</div>
+        <div>
+          <div class="title">AnNgonMoiNgay.vn</div>
+          <div style="font-size:12px;color:var(--muted)">Công thức & review quán ăn</div>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="#">Trang chủ</a>
+        <a href="#recipes">Công thức</a>
+        <a href="#reviews">Review</a>
+        <a class="cta" href="#subscribe">Đăng ký</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="tag">Món mới mỗi ngày</span>
+        <h1>Ăn ngon, khỏe — mỗi ngày</h1>
+        <p class="lead">Khám phá công thức đơn giản, review quán ăn địa phương và mẹo nấu ăn nhanh chóng. Hàng trăm gợi ý cho bữa ăn hôm nay.</p>
+
+        <div class="search" role="search" aria-label="Tìm kiếm công thức">
+          <input type="search" placeholder="Tìm món: phở, bún, salad..." aria-label="Tìm kiếm" />
+          <button aria-label="Tìm">Tìm</button>
+        </div>
+
+        <div class="featured" aria-hidden="false">
+          <div class="big card" style="margin-top:18px;">
+            <img src="https://vnaroma.com/wp-content/uploads/2020/10/bi-quyet-chuan-bi-gia-vi-nau-bun-bo-hue-chuan-vi-01.jpg" alt="Món đặc sắc">
+            <div class="card-body">
+              <div class="meta">Công thức • 15 phút</div>
+              <h3>Bún bò huế - phiên bản nhanh gọn</h3>
+              <p>Công thức rút gọn giữ vị đậm đà của miền Trung, nấu nhanh cho ngày bận rộn.</p>
+            </div>
+          </div>
+          <div class="small">
+            <div class="item">
+              <div class="meta">Review</div>
+              <h4 style="margin:8px 0 6px">Quán phở Hương Xưa</h4>
+              <p style="margin:0;color:var(--muted)">Phở thơm, nước dùng đậm vị xương hầm lâu.</p>
+            </div>
+            <div class="item">
+              <div class="meta">Mẹo</div>
+              <h4 style="margin:8px 0 6px">Làm bánh mì giòn vỏ</h4>
+              <p style="margin:0;color:var(--muted)">Mẹo nướng với bát nước sôi trong lò để tạo hơi ẩm.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="subscribe" id="subscribe">
+        <div style="font-weight:700;font-size:18px">Nhận công thức mỗi tuần</div>
+        <p style="color:var(--muted);font-size:14px;margin-top:8px">Đăng ký để nhận email 1 lần / tuần với 3 công thức ngon và mẹo nấu ăn hay.</p>
+        <form onsubmit="event.preventDefault();alert('Cảm ơn! Chúng tôi đã ghi nhận.');" style="margin-top:12px">
+          <label for="email" style="font-size:13px;color:var(--muted)">Email</label>
+          <input id="email" type="email" placeholder="email@vd.com" required />
+          <button class="btn" style="width:100%;margin-top:10px">Đăng ký</button>
+          <div style="font-size:12px;color:var(--muted);margin-top:8px">Chúng tôi tôn trọng quyền riêng tư của bạn.</div>
+        </form>
+      </aside>
+    </section>
+
+    <section style="margin-top:18px">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+        <h2 id="recipes">Công thức nổi bật</h2>
+        <a href="#" style="color:var(--accent-1);font-weight:700">Xem tất cả →</a>
+      </div>
+
+      <div class="grid" role="list">
+        <!-- card 1 -->
+        <article class="card" role="listitem">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=60" alt="Món 1">
+          <div class="card-body">
+            <div class="meta">30 phút • Dễ</div>
+            <h3>Gà rán giòn bơ tỏi</h3>
+            <p>Thịt gà ẩm, vỏ giòn rụm — công thức nêm nếm chuẩn vị nhà hàng.</p>
+          </div>
+        </article>
+
+        <!-- card 2 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=60" alt="Món 2">
+          <div class="card-body">
+            <div class="meta">15 phút • Nhanh</div>
+            <h3>Salad bơ trộn mù tạt</h3>
+            <p>Ngon mát, thích hợp mùa hè, cung cấp nhiều chất béo lành mạnh.</p>
+          </div>
+        </article>
+
+        <!-- card 3 -->
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=1200&q=60" alt="Món 3">
+          <div class="card-body">
+            <div class="meta">45 phút • Trung bình</div>
+            <h3>Cá kho tộ miền Nam</h3>
+            <p>Kho với nước màu caramel, đậm vị mắm đường — ăn cùng cơm nóng.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="reviews" style="margin-top:28px">
+      <h2>Review quán</h2>
+      <p style="color:var(--muted)">Những quán ăn nên thử — từ bún, phở đến xiên nướng.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px">
+        <div class="card"><img src="https://kimfoods.com.vn/public/media/images/tin-tuc/toi-nay-an-gi-167236732141564694536.jpg" alt="Quán"><div class="card-body"><h3>Quán ăn A</h3><p class="meta">Hà Nội • 4.5</p></div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=60" alt="Quán"><div class="card-body"><h3>Quán ăn B</h3><p class="meta">TPHCM • 4.2</p></div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1200&q=60" alt="Quán"><div class="card-body"><h3>Quán ăn C</h3><p class="meta">Đà Nẵng • 4.6</p></div></div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container center">
+        <div style="font-weight:700">AnNgonMoiNgay.vn</div>
+        <div style="margin-top:8px;color:var(--muted);font-size:14px">© 2025 AnNgonMoiNgay — Công thức, review và mẹo ẩm thực</div>
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">Liên hệ: <a href="mailto:contact@anngonmoingay.vn">contact@anngonmoingay.vn</a></div>
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+</html>
